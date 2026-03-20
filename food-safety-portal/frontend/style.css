@@ -1,0 +1,455 @@
+body{
+
+margin:0;
+font-family:Georgia, serif;
+background:linear-gradient(180deg,#022a18,#041f12);
+
+color:#b7e3b3;
+
+}
+
+
+/* Navbar */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+
+border-bottom:2px solid #2fa866;
+
+}
+
+.logo{
+
+font-size:22px;
+font-weight:bold;
+
+}
+
+.logo p{
+
+font-size:12px;
+margin:0;
+
+}
+
+nav a{
+
+margin:10px;
+color:#b7e3b3;
+text-decoration:none;
+font-size:15px;
+
+}
+
+nav a:hover{
+
+color:#6df39c;
+
+}
+
+
+/* Hero */
+
+.hero{
+
+text-align:center;
+padding:60px 20px;
+
+}
+
+.tag{
+
+display:inline-block;
+padding:8px 18px;
+border:1px solid #2fa866;
+border-radius:25px;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:600px;
+margin:auto;
+font-size:18px;
+
+}
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+.buttons button{
+
+padding:12px 20px;
+margin:10px;
+
+border-radius:12px;
+border:1px solid #2fa866;
+
+background:transparent;
+color:#b7e3b3;
+cursor:pointer;
+
+}
+
+.buttons button:hover{
+
+background:#0d3b24;
+
+}
+
+.danger{
+
+border-color:#ff5656;
+
+}
+
+
+/* Stats */
+
+.stats{
+
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(0,0,0,0.3);
+
+border:1px solid #2fa866;
+
+border-radius:20px;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+.card h2{
+
+font-size:40px;
+color:#8ef7a9;
+
+}
+
+.icon{
+
+font-size:40px;
+margin-bottom:10px;
+
+}
+
+
+/* Quick Actions */
+
+.quick{
+
+padding:40px;
+
+}
+
+.quick h2{
+
+font-size:32px;
+
+}
+
+.action-card{
+
+background:rgba(0,0,0,0.3);
+
+border:1px solid #2fa866;
+
+border-radius:20px;
+
+padding:30px;
+
+margin-top:25px;
+
+}
+
+.action-card h3{
+
+font-size:24px;
+
+}
+
+footer{
+
+text-align:center;
+padding:20px;
+margin-top:40px;
+border-top:1px solid #2fa866;
+
+}
+/* Report Form Section */
+
+.report-section{
+
+display:flex;
+justify-content:center;
+padding:40px;
+
+}
+
+.report-form{
+
+background:rgba(0,0,0,0.3);
+border:1px solid #2fa866;
+
+padding:30px;
+border-radius:15px;
+
+width:400px;
+
+}
+
+.report-form h2{
+
+text-align:center;
+margin-bottom:20px;
+color:#8ef7a9;
+
+}
+
+.report-form label{
+
+display:block;
+margin-top:15px;
+
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea{
+
+width:100%;
+padding:10px;
+margin-top:5px;
+
+border-radius:8px;
+border:1px solid #2fa866;
+
+background:#022a18;
+color:white;
+
+}
+
+.report-form button{
+
+margin-top:20px;
+width:100%;
+
+padding:12px;
+
+background:#0d6b3d;
+border:none;
+border-radius:10px;
+
+color:white;
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+.report-form button:hover{
+
+background:#0a4f2e;
+
+}
+/* Suggestion Form */
+
+.suggestion-section{
+
+display:flex;
+justify-content:center;
+padding:40px;
+
+}
+
+.suggestion-form{
+
+background:rgba(0,0,0,0.3);
+border:1px solid #2fa866;
+
+padding:30px;
+border-radius:15px;
+
+width:400px;
+
+}
+
+.suggestion-form input,
+.suggestion-form select,
+.suggestion-form textarea{
+
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:10px;
+
+border-radius:8px;
+border:1px solid #2fa866;
+
+background:#022a18;
+color:white;
+
+}
+
+.suggestion-form button{
+
+width:100%;
+padding:12px;
+
+background:#0d6b3d;
+
+border:none;
+border-radius:10px;
+
+color:white;
+cursor:pointer;
+
+}
+
+
+/* Education Cards */
+
+.education-section{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+padding:40px;
+
+}
+
+.edu-card{
+
+background:rgba(0,0,0,0.3);
+
+border:1px solid #2fa866;
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+.edu-card h3{
+
+color:#8ef7a9;
+
+}
+/* Search box */
+
+.search-box{
+
+text-align:center;
+margin:30px;
+
+}
+
+.search-box input{
+
+padding:12px;
+width:300px;
+border-radius:10px;
+border:1px solid #2fa866;
+background:#022a18;
+color:white;
+
+}
+
+.search-box button{
+
+padding:12px 20px;
+margin-left:10px;
+border-radius:10px;
+border:1px solid #2fa866;
+background:#044b2a;
+color:white;
+cursor:pointer;
+
+}
+
+
+/* Restaurant cards */
+
+.restaurant-list{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+
+}
+
+.restaurant-card{
+
+background:rgba(0,0,0,0.3);
+
+border:1px solid #2fa866;
+
+border-radius:15px;
+
+padding:25px;
+
+}
+
+.restaurant-card h2{
+
+color:#8ef7a9;
+
+}
+
+.restaurant-card p{
+
+margin:8px 0;
+
+}
+.nav-buttons {
+    text-align: center;       /* Center all nav buttons */
+    margin: 20px 0;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 12px;
+    border: 1px solid #2fa866;
+    background: transparent;
+    color: #b7e3b3;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+    background: #0d3b24;
+    color: #fff;
+}
+.nav-buttons button.active {
+    background: #2fa866;
+    color: white;
+}

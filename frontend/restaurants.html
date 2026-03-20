@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+
+<div class="logo">
+🌿 Safety Portal
+<p>HYDERABAD CITY</p>
+</div>
+
+<!-- ✅ FIXED NAVIGATION -->
+<div class="nav-buttons">
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='education.html'">Education</button>
+    <button onclick="window.location.href='report.html'">Report</button>
+    <button onclick="window.location.href='suggestions.html'">Suggestions</button>
+    <button onclick="window.location.href='restaurants.html'">Restaurants</button>
+</div>
+
+</header>
+
+
+<!-- Page Header -->
+<section class="hero">
+
+<h1>Certified Restaurants</h1>
+
+<p>
+Explore restaurants that meet official food safety and hygiene standards.
+</p>
+
+</section>
+
+
+<!-- Search -->
+<section class="search-box">
+
+<input type="text" placeholder="Search restaurant or location">
+
+<button onclick="searchRestaurants()">Search</button>
+</section>
+
+
+<!-- Static Restaurant List -->
+<section class="restaurant-list">
+
+<div class="restaurant-card">
+<h2>Paradise Biryani</h2>
+<p><b>Location:</b> Secunderabad</p>
+<p><b>Certification:</b> FSSAI Approved</p>
+<p><b>Hygiene Rating:</b> ⭐⭐⭐⭐</p>
+</div>
+
+<div class="restaurant-card">
+<h2>Bawarchi Restaurant</h2>
+<p><b>Location:</b> RTC X Roads</p>
+<p><b>Certification:</b> City Health Certified</p>
+<p><b>Hygiene Rating:</b> ⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="restaurant-card">
+<h2>Shah Ghouse</h2>
+<p><b>Location:</b> Tolichowki</p>
+<p><b>Certification:</b> FSSAI Approved</p>
+<p><b>Hygiene Rating:</b> ⭐⭐⭐⭐</p>
+</div>
+
+<div class="restaurant-card">
+<h2>Hotel Shadab</h2>
+<p><b>Location:</b> Charminar</p>
+<p><b>Certification:</b> Municipal Certified</p>
+<p><b>Hygiene Rating:</b> ⭐⭐⭐⭐</p>
+</div>
+
+</section>
+
+
+<!-- ✅ DYNAMIC REPORTS TABLE (from backend) -->
+<section class="report-section">
+
+<h2 style="text-align:center;">Reported Issues</h2>
+
+<table id="reportsTable" border="1" style="width:100%; margin-top:20px;">
+<thead>
+<tr>
+<th>Name</th>
+<th>Location</th>
+<th>Issue</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+</section>
+
+
+<!-- Back Button -->
+<div style="text-align:center; margin-top:20px;">
+<button onclick="history.back()">Back</button>
+</div>
+
+
+<footer>
+<p>© 2026 Hyderabad City Food Safety Portal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

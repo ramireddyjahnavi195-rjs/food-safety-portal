@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Food Safety Issue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+        🌿 Safety Portal
+        <p>HYDERABAD CITY</p>
+    </div>
+
+    <div class="nav-buttons">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='education.html'">Education</button>
+        <button onclick="window.location.href='report.html'">Report</button>
+        <button onclick="window.location.href='suggestions.html'">Suggestions</button>
+        <button onclick="window.location.href='restaurants.html'">Restaurants</button>
+    </div>
+</header>
+
+<!-- Page Title -->
+<section class="hero">
+    <h1>Report Food Safety Issue</h1>
+    <p>
+        If you experienced food poisoning or unsafe food practices,
+        please report it to help authorities improve food safety.
+    </p>
+</section>
+
+<!-- Report Form -->
+<section class="report-section">
+    <form class="report-form" id="reportForm">
+
+        <h2>Food Illness / Safety Concern Report</h2>
+
+        <!-- ✅ IMPORTANT: Match backend fields -->
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        
+		<label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Restaurant Name</label>
+        <input type="text" name="restaurant" placeholder="Enter restaurant name" required>
+
+        <label>Location</label>
+        <input type="text" name="location" placeholder="Enter restaurant location" required>
+
+        <label>Date of Visit</label>
+        <input type="date" name="date" required>
+
+        <label>Type of Issue</label>
+        <select name="issueType">
+            <option>Food Poisoning</option>
+            <option>Unhygienic Food Handling</option>
+            <option>Expired Food</option>
+            <option>Improper Storage</option>
+            <option>Other</option>
+        </select>
+        
+
+        <label>Describe the Issue</label>
+        <textarea name="issue" rows="5" placeholder="Explain what happened" required></textarea>
+
+        <!-- ✅ Submit -->
+        <button type="submit">Submit Report</button>
+
+        <!-- ✅ Navigation -->
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+
+    </form>
+</section>
+
+<!-- Back Button -->
+<div style="text-align:center; margin-top:20px;">
+    <button onclick="history.back()">Back</button>
+</div>
+
+<footer>
+    <p>© 2026 Hyderabad City Food Safety Portal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

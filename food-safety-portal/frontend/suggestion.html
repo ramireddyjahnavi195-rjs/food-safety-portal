@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Suggestions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+        🌿 Safety Portal
+        <p>HYDERABAD CITY</p>
+    </div>
+
+    <div class="nav-buttons">
+        <button  class = "active" onclick="window.location.href='index.html'">Home</button>
+        <button class = "active"onclick="window.location.href='education.html'">Education</button>
+        <button class = "active"onclick="window.location.href='report.html'">Report</button>
+        <button class = "active"  onclick="window.location.href='suggestions.html'">Suggestions</button>
+        <button class = "active" onclick="window.location.href='restaurants.html'">Restaurants</button>
+    </div>
+</header>
+
+<!-- Page Title -->
+<section class="hero">
+    <h1>Submit Your Suggestions</h1>
+    <p>Help us improve food safety standards in the city by sharing your ideas.</p>
+</section>
+
+<!-- Suggestion Form -->
+<section class="suggestion-section">
+    <form class="suggestion-form" id="suggestionForm">
+        <h2>Suggestion Form</h2>
+
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Suggestion Category</label>
+        <select name="category">
+            <option>Restaurant Hygiene</option>
+            <option>Food Safety Awareness</option>
+            <option>City Inspection Improvement</option>
+            <option>Public Health Measures</option>
+            <option>Other</option>
+        </select>
+
+        <label>Your Suggestion</label>
+        <textarea name="suggestion" rows="5" placeholder="Write your suggestion here" required></textarea>
+
+        <button type="submit">Submit Suggestion</button>
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+    </form>
+</section>
+
+<button onclick="history.back()">Back</button>
+
+<footer>
+    <p>© 2026 Hyderabad City Food Safety Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
